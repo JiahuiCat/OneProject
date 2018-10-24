@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- m vp-->
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <style type="text/css">
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="jd_layout">
+        <!--搜索-->
+        <header class="jd_header">
+            <div class="jd_header_box">
+                <a href="#" class="icon_logo"></a>
+                <form action="#">
+                    <span class="icon_search"></span>
+                    <input type="search" placeholder=" 京东超级新品日iphoneXR" />
+                </form>
+                <a href="#" class="login">登录</a>
+            </div>
+        </header>
+        <!-- 轮播图-->
+        <div class="stg">
+        <div class="jd_banner" id="jd_banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/l5.png" alt="" class="auto-img" /></div>
+                        <div class="swiper-slide"><img src="images/l1.png" alt="" class="auto-img" /></div>
+                            <div class="swiper-slide"><img src="images/l2.png" alt="" class="auto-img" /></div>
+                                <div class="swiper-slide"><img src="images/l3.png" alt="" class="auto-img" /></div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <!--导航栏-->
+                        <div class="jd_nav">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">
+                            <img src="images/nav1.png" alt="" />
+                            <p>京东超市</p>
+                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <img src="images/nav2.png" alt="" />
+                            <p>全球购</p>
+                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <img src="images/nav3.png" alt="" />
+                            <p>充值中心</p>
+                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <img src="images/nav4.png" alt="" />
+                            <p>服装城</p>
+                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <img src="images/nav5.png" alt="" />
+                            <p>京东金融</p>
+                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <img src="images/nav6.png" alt="" />
+                            <p>领券</p>
+                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <img src="images/nav7.png" alt="" />
+                            <p>分类查询</p>
+                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <img src="images/nav8.png" alt="" />
+                            <p>物流查询</p>
+                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--商品One-->
+                        <main class="jd_product">
+                            <!--商品盒子的子类-->
+                            <section class="product_box jd_sk">
+                                <!--头部-->
+                                <div class="product_box_tit no_border">
+                                    <div class="f_left m_l10">
+                                        <!-- <span class="sk_icon"></span> -->
+                                        <span class="sk_name">京东快报</span>
+                                        <div class="kuai-bao-two fl">
+                                        </div>
+                                    </div>
+                                    <div class="f_r_more clearfix">
+                                        <a href="#">更多></a>
+                                    </div>
+                                </div>
+                                <!--内容-->
+                                <div class="contentText">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <img src="images/detail04.jpg" alt="" />
+                                            <p>&yen;55.00</p>
+                                            <p>&yen;110.00</p>
+                                        </li>
+                                        <li>
+                                            <img src="images/detail05.jpg" alt="" />
+                                            <p>&yen;76.00</p>
+                                            <p>&yen;120.00</p>
+                                        </li>
+                                        <li>
+                                            <img src="images/detail06.jpg" alt="" />
+                                            <p>&yen;1399.00</p>
+                                            <p>&yen;2299.00</p>
+                                        </li>
+                                        <li class="fl">
+                                            <img src="images/detail07.jpg" alt="" />
+                                            <p>&yen;25.00</p>
+                                            <p>&yen;109.00</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <!--商品Two-->
+                            <main class="jd_product">
+                                <!--商品盒子的子类-->
+                                <section class="product_box jd_sk">
+                                    <!--头部-->
+                                    <div class="product_box_tit no_border">
+                                        <div class="f_left m_l10">
+                                            <span class="sk_icon"></span>
+                                            <span class="sk_name">掌上秒杀</span>
+                                            <div class="sk_time m_l10" id="time" data-ishot="true" data-time="2018-10-28 05:55:55">
+                                            </div>
+                                        </div>
+                                        <div class="f_right m_r10">
+                                            <a href="#">更多></a>
+                                        </div>
+                                    </div>
+                                    <!--内容-->
+                                    <div class="product_box_con">
+                                        <ul class="clearfix">
+                                            <li>
+                                                <a href="#"><img src="images/detail01.png" alt="" /></a>
+                                                <p>&yen;78.00</p>
+                                                <p>&yen;178.00</p>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/detail03.png" alt="" /></a>
+                                                <p>&yen;35.00</p>
+                                                <p>&yen;77.00</p>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/detail02.png" alt="" /></a>
+                                                <p>&yen;88.00</p>
+                                                <p>&yen;359.00</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <!--块-->
+                                <!--商品盒子的子类-->
+                                <section class="product_box">
+                                    <!--头部-->
+                                    <div class="product_box_tit">
+                                        <h3>每日逛</h3>
+                                    </div>
+                                    <!--内容-->
+                                    <div class="product_box_con clearfix">
+                                        <a href="#" class="f_left w_50 b_right"><img src="images/cp1.png" alt="" /></a>
+                                        <a href="#" class="f_right w_50 b_bottom"><img src="images/cp2.png" alt="" /></a>
+                                        <a href="#" class="f_right w_50"><img src="images/cp3.png" alt="" /></a>
+                                    </div>
+                                </section>
+                                <!--块-->
+                                <!--商品盒子的子类-->
+                                <section class="product_box">
+                                    <!--头部-->
+                                    <div class="product_box_tit">
+                                        <h3>爱生活</h3>
+                                    </div>
+                                    <!--内容-->
+                                    <div class="product_box_con clearfix">
+                                        <a href="#" class="f_right w_50 b_left"><img src="images/cp4.png" alt="" /></a>
+                                        <a href="#" class="f_left w_50 b_bottom"><img src="images/cp5.png" alt="" /></a>
+                                        <a href="#" class="f_left w_50"><img src="images/cp6.png" alt="" /></a>
+                                    </div>
+                                </section>
+                                <!--块-->
+                                <!--商品盒子的子类-->
+                                <section class="product_box">
+                                    <!--头部-->
+                                    <div class="product_box_tit">
+                                        <h3>逛商场</h3>
+                                    </div>
+                                    <!--内容-->
+                                    <div class="product_box_con clearfix">
+                                        <a href="#" class="f_left w_50 b_right"><img src="images/cp7.png" alt="" /></a>
+                                        <a href="#" class="f_right w_50 b_bottom"><img src="images/cp8.png" alt="" /></a>
+                                        <a href="#" class="f_right w_50"><img src="images/cp9.png" alt="" /></a>
+                                    </div>
+                                </section>
+                                <!--块-->
+                            </main>
+                            <div class="order"> ↑ 为你推荐</div>
+                            <div class="order-play">
+                                <div class="order-play-w1 fl">
+                                    <div class="order-play-w1-one"></div>
+                                    <div class="order-play-w1-two"><span class="mabi">自营 </span><span>乐8升四季控温型适用燃气热水等功能</span></div>
+                                    <div class="order-play-w1-three">
+                                        <div class="order-money fl">￥688</div>
+                                        <div class="order-money-text fl">满减</div>
+                                        <div class="order-like fr">看相似</div>
+                                    </div>
+                                </div>
+                                <div class="order-play-w1 fl">
+                                    <div class="order-play-w1-one2"></div>
+                                    <div class="order-play-w1-two"><span class="mabi">京东超市 </span><span>南极人（Nanjiren）袜子男士</span></div>
+                                    <div class="order-play-w1-three">
+                                        <div class="order-money fl">￥29.9</div>
+                                        <div class="order-like fr">看相似</div>
+                                    </div>
+                                </div>
+                                <div class="order-play-w1 fl">
+                                    <div class="order-play-w1-one3"></div>
+                                    <div class="order-play-w1-two"><span></span><span>新鲜热辣的芝士米饭</span></div>
+                                    <div class="order-play-w1-three">
+                                        <div class="order-money fl">￥45</div>
+                                        <div class="order-like fr">看相似</div>
+                                    </div>
+                                </div>
+                                <div class="order-play-w1 fl">
+                                    <div class="order-play-w1-one4"></div>
+                                    <div class="order-play-w1-two"><span></span><span>最好吃的寿司只需要八折起</span></div>
+                                    <div class="order-play-w1-three">
+                                        <div class="order-money fl">￥109.5</div>
+                                        <div class="order-like fr">看相似</div>
+                                    </div>
+                                </div>
+                                <div class="order-play-w1 fl">
+                                    <div class="order-play-w1-one5"></div>
+                                    <div class="order-play-w1-two"><span></span><span>百变工具包，应有尽有。</span></div>
+                                    <div class="order-play-w1-three">
+                                        <div class="order-money fl">￥439</div>
+                                        <div class="order-like fr">看相似</div>
+                                    </div>
+                                </div>
+                                <div class="order-play-w1 fl">
+                    <div class="order-play-w1-one6"></div>
+                    <div class="order-play-w1-two"><span class="biaozhi">热销</span><span>内衣服饰大甩卖，全场一折起</span></div>
+                    <div class="order-play-w1-three">
+                        <div class="order-money fl">￥99.9</div><div class="order-money-text fl">满减</div><div class="order-like fr">看相似</div>
+                    </div>
+            </div>
+                            </div>
+                    </div>
+
+                    <!-- 避免footer遮住商品展示-->
+                    <div style="height:50px; line-height:50px; clear:both;"></div>
+                    <!-- footer-->
+                    <div class="v_nav">
+                        <div class="vf_nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                            <i class="vf_1"></i>
+                            <span>首页</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <i class="vf_2"></i>
+                            <span>客服</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <i class="vf_3"></i>
+                            <span>分类</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <i class="vf_4"></i>
+                            <span>购物车</span>
+                        </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                            <i class="vf_5"></i>
+                            <span>我的</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+                    <script type="text/javascript" src="js/swiper.min.js"></script>
+                    <script type="text/javascript" src="js/changeColor.js"></script>
+                    <script type="text/javascript" src="js/BuyingTime.js"></script>
+                    <script type="text/javascript">
+                    window.onload = function() {
+                        var swiper = new Swiper('.swiper-container', {
+                            pagination: {
+                                el: '.swiper-pagination',
+                            },
+                        });
+                        // new Banner();
+                        var swiper = new Swiper('.swiper-container', {
+                            //预览几张图片
+                            slidesPerView: 1,
+                            //图片与图片之间的间距
+                            spaceBetween: 0,
+
+                            //循环轮播
+                            loop: true,
+
+                            //自动轮播
+                            autoplay: {
+                                delay: 1000,
+
+                                //轮播到最后一张图片就停止轮播, 该属性不能和loop属性一起使用
+                                stopOnLastSlide: false,
+
+                                //点击图片索引停止轮播
+                                disableOnInteraction: false
+                            },
+
+                            //图片索引
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true //可点击图片
+                            },
+
+                            //左右箭头
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev'
+                            },
+
+
+                        })
+                        //设置抢购定时器
+                        setCountDwonTime();
+                    }
+                    </script>
+</body>
+
+</html>
